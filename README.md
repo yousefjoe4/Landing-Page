@@ -1,0 +1,4 @@
+- This is a simple project that includes 4 sections, and a nav bar. 
+- The items of the nav bar are dynamically created. 
+- The nav bar items are selected whenever the user scrolls to the corresponding section
+- The section is highlighted whenever the users scrolls to it
