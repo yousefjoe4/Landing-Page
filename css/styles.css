@@ -11,10 +11,6 @@
 
 /* ---- Base Rules ---- */
 
-html {
-    scroll-behavior: smooth;
-}
-
 body {
     background: rgb(10, 79, 162);
     background: linear-gradient(0deg, rgb(80, 1, 98) 50%, rgb(3, 23, 93) 100%);
@@ -84,8 +80,13 @@ section {
     display: inline-block;
     color: white;
     font-size: 1.5em;
-    margin-left: 1em;
 }
+
+.navbar__menu a {
+    margin-left: 1em;
+
+}
+
 
 .navbar__menu li.active {
     background: white;

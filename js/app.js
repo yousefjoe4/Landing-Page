@@ -26,7 +26,18 @@ function attachSectionsTextsToNavBarList(sections,navbarList) {
 
         navBarLi.setAttribute("id", `nav-${section.id}`)
 
-        // setOnClickEventListenerToItem(liElement, onNavBarItemClickedScrollToAssociatedSection)
+        console.log(navBarItem)
+
+        navBarItem.addEventListener("click",(event)=>{
+            // prevent scroling directly to the anchor when the item is clicked
+            event.preventDefault();
+
+            // get the sectionId of the corresponding
+            const sectionId = event.currentTarget.getAttribute("href")
+
+            // Scroll to the section with the sectionId using "smooth" behavior, to scroll smoothly
+            document.querySelector(sectionId).scrollIntoView({behavior:"smooth"})
+        })
 
         navbarList.append(navBarItem)
     })
